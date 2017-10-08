@@ -46,9 +46,14 @@ View.prototype.bindAddNodeClickHandler = function(handler) {
 View.prototype.bindDeleteNodeClickHandler = function(handler) {
     var ul = this.ulElement;
     this.ulElement.addEventListener("click", function(event) {
+        var deleteButtons = this.getElementsByClassName("destroy");
         var targetElement = event.target || event.srcElement;
-        var index = targetElement.parentElement.getAttribute("data-id");
-        handler(index);
+        for(var i=0;i<deleteButtons.length; i++){
+          if(deleteButtons[i]==targetElement){
+            var index = targetElement.parentElement.getAttribute("data-id");
+            handler(index);
+          }
+        }
     });
 
 };
