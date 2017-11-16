@@ -3,7 +3,10 @@
  * @param {String} text   Text user entered for a particular todo
  * @param {String} status Status of a todo
  */
-var Todo = function(text, status) {
-  this.text = text;
-  this.status = status;
-};
+class Todo {
+    constructor(text, status) {
+        this.text = text;
+        this.status = status;
+    };
+
+}

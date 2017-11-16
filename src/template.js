@@ -1,11 +1,14 @@
-var TodoTemplate = function() {
-  
-};
+class TodoTemplate {
 
-TodoTemplate.prototype.showTodo= function(todoList){
-  var template = '';
-  _.each(todoList, function(todo) {
-    template = template + '<li data-id="' + todo.id + '" class="todo-li">' + todo.text + '<button class="destroy">delete</button></li>';
-  });
-  return template;
-};
+    showTodo(todoList) {
+        let template = todoList.reduce((temp, d)=>{
+         return temp + 
+        			'<li data-id="' 
+        			+ d.id 
+        			+ '" class="todo-li">' 
+        			+ d.text 
+        			+ '<button class="destroy">delete</button></li>';
+        },'');         
+        return template;
+    }
+}
