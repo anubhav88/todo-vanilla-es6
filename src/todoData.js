@@ -2,7 +2,7 @@
  * Data store for the application
  * @param {Array} todoList list to initialize the store
  */
-class TodoData {
+export default class TodoData {
     constructor(todoList) {
         this.todos = todoList;
     };

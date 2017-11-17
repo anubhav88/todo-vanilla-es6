@@ -1,4 +1,4 @@
-class TodoTemplate {
+export default class TodoTemplate {
 
     showTodo(todoList) {
         let template = todoList.reduce((temp, d)=>{

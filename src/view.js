@@ -1,4 +1,4 @@
-class View {
+export default class View {
     constructor(template) {
         this.templateHtml = template;
         this.ulElement = document.getElementsByClassName("todo-list")[0];

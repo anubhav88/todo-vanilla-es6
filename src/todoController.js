@@ -2,7 +2,7 @@
  * @param {!TodoDate} todoData a TodoData instance
  * @param {!View} view a View instance
  */
-class TodoController {
+export default class TodoController {
     constructor(todoData, view) {
         this.store = todoData;
         this.todoView = view;
