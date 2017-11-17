@@ -1,2 +1,2 @@
 # todo-vanilla
-Simple Todo app using old javascript
+Simple Todo app using ES6 javascript
